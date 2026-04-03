@@ -1,4 +1,4 @@
-# SafePath - Nighttime Road Companion App
+# SafePath - Road Companion App
 
 ## 🧑‍🤝‍🧑 Team Members
 - Project Lead: Sihan Wu 2361834 
@@ -12,4 +12,4 @@
 ---
 
 ## 📌 Project Overview
-SafePath is a mobile application designed to help users find reliable road companions for safe nighttime travel, ensuring security and peace of mind during late journeys.
+SafePath is a mobile application designed to help users find reliable road companions for safe travel, ensuring security and peace of mind during late journeys.
