@@ -1,7 +1,7 @@
 # SafePath - Road Companion App
 
 ## 🧑‍🤝‍🧑 Team Members
-- Project Lead: Sihan Wu 2361834 
+- Group Lead: Sihan Wu 2361834 
 - Bowen Yu 2363002
 - Jinxin Chen 2361876
 - Haoran Sun 2361475
