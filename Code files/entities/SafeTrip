@@ -1,0 +1,143 @@
+{
+  "name": "SafeTrip",
+  "type": "object",
+  "properties": {
+    "start_point": {
+      "type": "string",
+      "description": "Starting location name"
+    },
+    "destination": {
+      "type": "string",
+      "description": "Destination location name"
+    },
+    "start_lat": {
+      "type": "number",
+      "description": "Starting location latitude"
+    },
+    "start_lng": {
+      "type": "number",
+      "description": "Starting location longitude"
+    },
+    "dest_lat": {
+      "type": "number",
+      "description": "Destination latitude"
+    },
+    "dest_lng": {
+      "type": "number",
+      "description": "Destination longitude"
+    },
+    "departure_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the trip starts"
+    },
+    "estimated_arrival": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Estimated arrival time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planning",
+        "active",
+        "completed",
+        "cancelled",
+        "sos"
+      ],
+      "default": "planning",
+      "description": "Current trip status"
+    },
+    "guardian_mode": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether guardian mode is enabled"
+    },
+    "companion_matching": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether companion matching is requested"
+    },
+    "companions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "trust_score": {
+            "type": "number"
+          },
+          "route_overlap": {
+            "type": "number"
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        }
+      },
+      "description": "Walking companions for this trip"
+    },
+    "guardians": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string"
+          },
+          "notified": {
+            "type": "boolean"
+          }
+        }
+      },
+      "description": "Guardian contacts for this trip"
+    },
+    "safety_status": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "warning",
+        "alert",
+        "sos"
+      ],
+      "default": "normal",
+      "description": "Current safety status"
+    },
+    "arrival_confirmed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether safe arrival was confirmed"
+    },
+    "estimated_duration_minutes": {
+      "type": "number",
+      "description": "Estimated walk duration in minutes"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional trip notes"
+    }
+  },
+  "required": [
+    "start_point",
+    "destination"
+  ],
+  "rls": {
+    "create": {
+      "created_by": "{{user.email}}"
+    },
+    "read": {
+      "created_by": "{{user.email}}"
+    },
+    "update": {
+      "created_by": "{{user.email}}"
+    },
+    "delete": {
+      "created_by": "{{user.email}}"
+    }
+  }
+}
