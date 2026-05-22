@@ -20,5 +20,7 @@ Develop Log(only can be viewed):https://xjtlums-my.sharepoint.com/:w:/g/personal
 
 Kanban Board:https://github.com/users/JiayuChen2302/projects/1
 
+video: https://video.xjtlu.edu.cn/Mediasite/MyMediasite/presentations/6850c603dc0143a8b265c80732e883041d
+
 You can also find other resources in here!
 
